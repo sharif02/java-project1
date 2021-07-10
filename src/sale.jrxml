@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c6ae06c1-b58f-4060-8dca-b46ddd0a212f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     curent_sales.`invoice` AS curent_sales_invoice,
+     curent_sales.`product_id` AS curent_sales_product_id,
+     curent_sales.`product_unit` AS curent_sales_product_unit,
+     curent_sales.`quantity` AS curent_sales_quantity,
+     curent_sales.`purches_price` AS curent_sales_purches_price,
+     curent_sales.`discount` AS curent_sales_discount,
+     curent_sales.`total_price` AS curent_sales_total_price,
+     curent_sales.`sale_price` AS curent_sales_sale_price,
+     curent_sales.`id` AS curent_sales_id
+FROM
+     `curent_sales` curent_sales]]>
+	</queryString>
+	<field name="curent_sales_invoice" class="java.lang.Integer"/>
+	<field name="curent_sales_product_id" class="java.lang.Integer"/>
+	<field name="curent_sales_product_unit" class="java.lang.String"/>
+	<field name="curent_sales_quantity" class="java.lang.String"/>
+	<field name="curent_sales_purches_price" class="java.lang.Double"/>
+	<field name="curent_sales_discount" class="java.lang.Double"/>
+	<field name="curent_sales_total_price" class="java.lang.Double"/>
+	<field name="curent_sales_sale_price" class="java.lang.Double"/>
+	<field name="curent_sales_id" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="220" y="13" width="144" height="20" uuid="d91c7563-5e19-4a21-93db-be8c5d65955a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Skill Based It]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="27" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="66" y="10" width="100" height="20" uuid="503316b3-c84b-49d0-87e8-be4dd2954ea2"/>
+				<text><![CDATA[Sale Invoice]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="166" y="10" width="100" height="20" uuid="fa1e9334-de2d-4fb7-bd59-01297ad3063a"/>
+				<text><![CDATA[Product Id]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="35" splitType="Stretch">
+			<textField>
+				<reportElement x="66" y="0" width="100" height="20" uuid="f21536a0-a468-4ec8-a7ef-e99830b0e2b2"/>
+				<textFieldExpression><![CDATA[$F{curent_sales_invoice}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="166" y="0" width="100" height="20" uuid="108ed178-cc8a-4507-ae17-66969f3e8f3f"/>
+				<textFieldExpression><![CDATA[$F{curent_sales_product_id}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

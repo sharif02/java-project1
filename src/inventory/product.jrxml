@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c954d8af-3071-4fbc-9244-1e5edc7a1712">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT
+     product.`Id`,
+     product.`product_name`,
+     product.`Brand_name`,
+     product.`Masuerment`,
+     product.`Self_no`,
+     product.`Sale_price`,
+     product.`Purches_price`
+FROM
+     `product`]]>
+	</queryString>
+	<field name="Id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="product_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Brand_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Masuerment" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Self_no" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Sale_price" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Purches_price" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="103" y="3" width="303" height="25" uuid="d4e4a28b-8499-44d9-bdbd-3001eccb2d2d"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Skill Based It]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="103" y="28" width="303" height="20" uuid="7d370831-2118-4886-9cdc-5716e4603d4e"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Hazi fazel road ,feni.]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21" splitType="Stretch">
+			<staticText>
+				<reportElement x="5" y="0" width="79" height="20" uuid="5111f4ca-2828-4f88-9ae8-95cbbc52c59f"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Double" lineColor="#CCCCFF"/>
+					<topPen lineWidth="0.5" lineStyle="Double" lineColor="#CCCCFF"/>
+					<leftPen lineWidth="0.5" lineStyle="Double" lineColor="#CCCCFF"/>
+					<bottomPen lineWidth="0.5" lineStyle="Double" lineColor="#CCCCFF"/>
+					<rightPen lineWidth="0.5" lineStyle="Double" lineColor="#CCCCFF"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="84" y="1" width="79" height="20" uuid="dcb816b0-150b-44f6-b001-7814493d656b"/>
+				<box>
+					<pen lineWidth="0.3" lineStyle="Double" lineColor="#CCCCFF"/>
+					<topPen lineWidth="0.3" lineStyle="Double" lineColor="#CCCCFF"/>
+					<leftPen lineWidth="0.3" lineStyle="Double" lineColor="#CCCCFF"/>
+					<bottomPen lineWidth="0.3" lineStyle="Double" lineColor="#CCCCFF"/>
+					<rightPen lineWidth="0.3" lineStyle="Double" lineColor="#CCCCFF"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[product name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="163" y="1" width="100" height="20" uuid="3d9e0560-5ae1-4385-ba1b-4b7e5237ffd6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Sale price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="263" y="1" width="100" height="20" uuid="715aa041-b76c-4360-8725-29ea2221375d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[purches price]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="5" y="0" width="79" height="20" uuid="2dc1d975-07f4-4906-bf0d-4d4493cb7f24"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Double" lineColor="#CCCCFF"/>
+					<topPen lineWidth="0.5" lineStyle="Double" lineColor="#CCCCFF"/>
+					<leftPen lineWidth="0.5" lineStyle="Double" lineColor="#CCCCFF"/>
+					<bottomPen lineWidth="0.5" lineStyle="Double" lineColor="#CCCCFF"/>
+					<rightPen lineWidth="0.5" lineStyle="Double" lineColor="#CCCCFF"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="84" y="0" width="79" height="20" uuid="612425b6-5f40-4dfc-885b-41f77c962df3"/>
+				<box>
+					<pen lineWidth="0.3" lineColor="#CCCCFF"/>
+					<topPen lineWidth="0.3" lineColor="#CCCCFF"/>
+					<leftPen lineWidth="0.3" lineColor="#CCCCFF"/>
+					<bottomPen lineWidth="0.3" lineColor="#CCCCFF"/>
+					<rightPen lineWidth="0.3" lineColor="#CCCCFF"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{product_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="163" y="4" width="100" height="20" uuid="5fa6ccc4-b13a-45f4-8172-f0279d7826ea"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Sale_price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="263" y="4" width="100" height="20" uuid="d5297dad-f77e-4c4a-88c5-1524e4084638"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Purches_price}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="32" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="51" splitType="Stretch">
+			<staticText>
+				<reportElement x="108" y="11" width="303" height="20" uuid="db333592-4665-4014-a3ec-1f1f95254a1a"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Skill Based It]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="118" y="31" width="303" height="20" uuid="fddcdedd-0fa7-4a3c-a29d-998e9070347a"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Hazi fazel road ,feni.]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="35" splitType="Stretch"/>
+	</summary>
+</jasperReport>
